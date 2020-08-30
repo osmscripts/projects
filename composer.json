@@ -1,0 +1,12 @@
+{
+    "name": "osmscripts/projects",
+    "autoload": {
+        "psr-4": {
+            "OsmScripts\\Projects\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.2",
+        "osmscripts/core": "^1.4"
+    }
+}
