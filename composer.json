@@ -1,5 +1,13 @@
 {
     "name": "osmscripts\/projects",
+    "description": "Cross-project analysis tools",
+    "license": "GPL-3.0-only",
+    "authors": [
+        {
+            "name": "Vladislav Osmianskij",
+            "email": "vlaosm@gmail.com"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "OsmScripts\\Projects\\": "src\/"
