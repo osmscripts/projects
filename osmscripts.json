@@ -1,0 +1,7 @@
+{
+    "projects": {
+        "commands": {
+            "show:packages": "OsmScripts\\Projects\\Commands\\ShowPackages"
+        }
+    }
+}
