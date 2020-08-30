@@ -1,12 +1,15 @@
 {
-    "name": "osmscripts/projects",
+    "name": "osmscripts\/projects",
     "autoload": {
         "psr-4": {
-            "OsmScripts\\Projects\\": "src/"
+            "OsmScripts\\Projects\\": "src\/"
         }
     },
     "require": {
         "php": "^7.2",
-        "osmscripts/core": "^1.4"
-    }
+        "osmscripts\/core": "^1.4"
+    },
+    "bin": [
+        "projects"
+    ]
 }
