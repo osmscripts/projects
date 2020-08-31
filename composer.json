@@ -1,6 +1,6 @@
 {
     "name": "osmscripts\/projects",
-    "description": "Cross-project analysis tools",
+    "description": "See the package version used in each project",
     "license": "GPL-3.0-only",
     "authors": [
         {
