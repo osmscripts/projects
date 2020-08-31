@@ -1,4 +1,6 @@
 
+## Usage
+
 Currently, this repository contains a single command:
 
     projects show:packages
@@ -31,7 +33,7 @@ Install the package using the following command:
 
     composer global require osmscripts/projects
 
-## Add The Script Directory To Path
+## Add The Script Directory To `PATH`
 
 The package contains `projects` command-line script. To run the script from any directory, add the directory containing the script to the operating system `PATH` environment variable.
 
