@@ -2,14 +2,30 @@
 Currently, this repository contains a single command:
 
     projects show:packages
+
+Using this command, you can see:
+
+* Laravel version each project is using;
+* the versions of your own packages used in various projects.
     
-It shows which Composer package versions are used in your projects. With this command you can see Laravel version each project is using or if you develop your own packages, the versions of these packages in various projects.
+Sample output:
 
-Created using [OsmScripts](https://github.com/osmscripts/osmscripts).
+    my/package1
+        full/project1/path        v3.4.2 <- ^3.0,^3.2
+    my/package2
+        full/project1/path        v1.0.0 <- ^1
+        full/project2/path        v1.x-dev <- ^1,v1.x-dev
 
-Requires PHP 7.2 or later and Composer.
+The first version in the output is the actually installed version, the others are the versions required in the project's `composer.json` or in the `composer.json` of the other packages.
+
+By default, it groups the output by a package. Add `--by=project` to group it by a project instead. 
 
 ## Installation
+
+Prerequisites: 
+
+* PHP 7.2 or later 
+* Composer.
 
 Install the package using the following command:
 
@@ -56,3 +72,5 @@ Here is how I use it:
 Copyright (C) 2020 - Vladislav Ošmianskij.
 
 All files of this package are licensed under [GPL-3.0](/LICENSE).
+
+Created using [OsmScripts](https://github.com/osmscripts/osmscripts).
