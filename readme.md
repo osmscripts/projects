@@ -37,7 +37,7 @@ Install the package using the following command:
 
 The package contains `projects` command-line script. To run the script from any directory, add the directory containing the script to the operating system `PATH` environment variable.
 
-On Windows:
+### Windows
 
 1. Open Windows `Start` menu, type in `env` and pick `Edit the system environment variables`.
 
@@ -52,10 +52,11 @@ On Windows:
 4. Press `OK`, `Apply`, `OK`.
 
 
-On Linux, add the following line to `~/.profile`:
+### Linux
+
+Add the following line to `~/.profile`:
 
     PATH="$HOME/.composer/vendor/bin:$PATH"
-
 
 ## Configuration
 
