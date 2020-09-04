@@ -68,7 +68,7 @@ Specify where your projects are, and the names of the packages:
 Here is how I use it:
 
     projects var projects=C:\Users\Vladislav\AppData\Roaming\Composer;d:\_projects\*
-    projects var "packages=osmphp\/|osmscripts\/|osmianski\/"
+    projects var "packages=osmphp/|osmscripts/|osmianski/"
 
 ## License And Credits ##
 

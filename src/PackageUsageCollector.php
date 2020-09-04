@@ -2,9 +2,9 @@
 
 namespace OsmScripts\Projects;
 
-use Osmianski\Hints\UsageHint;
 use OsmScripts\Core\Object_;
 use OsmScripts\Core\Project;
+use OsmScripts\Projects\Hints\UsageHint;
 
 /**
  * Constructor arguments:
@@ -34,7 +34,7 @@ class PackageUsageCollector extends Object_
 
         foreach ($this->project->packages as $package) {
             if ($this->package_regex && !preg_match(
-                "/{$this->package_regex}/", $package->name))
+                "'{$this->package_regex}'", $package->name))
             {
                 continue;
             }

@@ -6,6 +6,7 @@ use OsmScripts\Projects\Hints\UsageHint;
 use OsmScripts\Projects\PackageUsageCollector;
 use OsmScripts\Core\Command;
 use OsmScripts\Core\Variables;
+use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 
 /** @noinspection PhpUnused */
@@ -39,7 +40,7 @@ class ShowPackages extends Command
             case 'variables': return $script->singleton(Variables::class);
 
             case 'project_path': return $this->input->getOption('projects');
-            case 'package_regex': return $this->input->getOption('packages');
+            case 'package_regex': return $this->input->getArgument('packages');
             case 'by': return $this->input->getOption('by');
 
             case 'usages_by_project': return $this->getUsagesByProject();
@@ -122,8 +123,8 @@ class ShowPackages extends Command
                 InputOption::VALUE_OPTIONAL,
                 'Project directory glob patterns',
                 $this->variables->get('projects'))
-            ->addOption('packages', null,
-                InputOption::VALUE_OPTIONAL,
+            ->addArgument('packages',
+                InputArgument::OPTIONAL,
                 'Package name regex pattern',
                 $this->variables->get('packages'))
             ->addOption('by', null,
