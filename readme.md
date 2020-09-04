@@ -70,6 +70,16 @@ Here is how I use it:
     projects var projects=C:\Users\Vladislav\AppData\Roaming\Composer;d:\_projects\*
     projects var "packages=osmphp/|osmscripts/|osmianski/"
 
+You may also provide these variables directly in the command line.
+
+Provide package name regex in a command line argument:
+
+    projects show:packages osmphp/ 
+
+Provide project paths in a command line option:
+
+    projects show:packages --projects=d:\_projects\*
+
 ## License And Credits ##
 
 Copyright (C) 2020 - Vladislav Ošmianskij.
